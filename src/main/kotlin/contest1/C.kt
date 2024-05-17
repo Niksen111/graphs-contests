@@ -4,8 +4,8 @@ import kotlin.math.max
 import kotlin.math.min
 
 fun main(args: Array<String>) {
-    var graph = emptyArray<MutableSet<Int>>()
-    var graphReduced: Array<MutableSet<Int>> = emptyArray()
+    val graph: Array<MutableSet<Int>>
+    val graphReduced: Array<MutableSet<Int>>
     var cycles: Long = 0L
     var input = readln().split(' ').map { it.toInt() }
     val n: Int = input[0]

@@ -60,7 +60,7 @@ fun printSquare(square: Pair<Int, Int>) {
     println(numberToLetter[square.first].toString() + (square.second + 1))
 }
 
-fun colorCorner(board: Array<Array<Int>>, square: Pair<Int, Int>, number: Int) {
+fun colorCorner(board: Array<Array<Int>>, square: Pair<Int, Int>) {
     moves.forEach { move ->
         val newSquare = makeMove(square, move)
         if (inBoard(newSquare)) {
@@ -84,10 +84,10 @@ fun main(args: Array<String>) {
         colored = newColored
     }
 
-    if (board[0][0] == 0) colorCorner(board, Pair(0, 0), 6)
-    if (board[0][7] == 0) colorCorner(board, Pair(0, 7), 6)
-    if (board[7][0] == 0) colorCorner(board, Pair(7, 0), 6)
-    if (board[7][7] == 0) colorCorner(board, Pair(7, 7), 6)
+    if (board[0][0] == 0) colorCorner(board, Pair(0, 0))
+    if (board[0][7] == 0) colorCorner(board, Pair(0, 7))
+    if (board[7][0] == 0) colorCorner(board, Pair(7, 0))
+    if (board[7][7] == 0) colorCorner(board, Pair(7, 7))
 
 
     println(start)
