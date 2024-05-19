@@ -1,4 +1,4 @@
-//package contest1
+package contest1
 
 import java.util.*
 
