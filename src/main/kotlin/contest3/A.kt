@@ -1,3 +1,5 @@
+package contest3
+
 import java.util.Scanner
 
 fun floyd(d: Array<IntArray>): Array<IntArray> {
